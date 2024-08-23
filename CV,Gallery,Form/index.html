@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+      *{
+        font-family: sans-serif;
+        margin: 0%;
+      }  
+      .navbar{
+        width: 100vw;
+        height: 70px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .navbar a{
+        color: aliceblue;
+        font-size: larger;
+        text-decoration:none;
+        transition: all 1s;
+        font-weight: 600;
+      }
+       .navbar a:hover{
+        text-decoration: underline;
+        color: crimson;
+      }
+      img{
+        width: 250px;
+        height: 220px;
+        border-radius: 20px;
+        box-shadow: 5px 10px 20px;
+      }
+      dt{
+        background-color: rgba(57, 46, 46, 0.242);
+        font-weight: bold;
+      }
+      @media (max-width: 640px) {
+        .navbar a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .parent li{
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+      @media (max-width:426px) {
+        .navbar a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          left: -5%;
+        }
+
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+      <h1>About</h1>
+        <a target="_blank" style="margin-left: -8%;" href="./pages/gallery.html">Gallery</a>
+        <a target="_blank" style="margin-left: 50px;" href="./pages/form.html">Form</a>
+    </nav> <br>
+  <center>
+      <div class="imageparent">
+      <img src="./assets/download.png" alt="image not found">
+      </div> <br>
+      <dt>Mission:</dt> <br>
+        <p>Our mission is to support the underprivileged by providing essential services such as free food, ration distribution, medical assistance, clean water, and education.</p>
+        <p>Saylani Welfare International Trust is a non-government organization (NGO) focusing primarily on feeding the poor and homeless. It was established in 1999 and the headquartered is located at Bahdurabad Karachi, Pakistan. Saylani Welfare International Trust (Pakistan) Founded in the month of May.</p>
+       <br>
+
+      <dt>About education:</dt> <br>
+        <p>Maulana Qadri said the academic initiatives of Saylani Welfare stood for providing education as per world-class academic and skill-based education standards. He said the graduates of the mass IT education programme of Saylani would earn up to $100 billion annually through the export of IT products and services.</p>
+      <br>
+
+      <dt>Courses Offered: </dt> <br>
+  </center>
+    <div class="parent" style="display: flex;justify-content: space-evenly;line-height: 25px;">
+      <ul>
+        <li>WEB & MOBILE APP DEVELOPMENT</li>
+        <li>FLUTTER APPLICATION</li>
+      </ul>
+      <ul>
+        <li>PYTHON PROGRAMMING</li>
+        <li>GRAPHIC DESIGNING</li>
+      </ul>
+    </div>
+        
+</body>
+</html>

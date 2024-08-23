@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    *{
+        font-family: sans-serif;
+    } 
+     fieldset{
+        width: 400px;
+        border-radius: 20px;
+        background-color: brown;
+        box-shadow: 20px 10px 50px  gray;
+        border: transparent;
+        flex-direction: column;
+        align-items: center;
+     }
+     fieldset > input {
+        border-radius: 25px;
+        border: transparent;
+     }
+     #inp{
+        border-radius: 6px;
+        background-color: aliceblue;
+        color: black;
+        padding: 12px;
+        transition: all 1s;
+     }
+     #inp:hover{
+        background-color: black;
+        color: aliceblue;
+     }
+     @media (max-width:780px){
+        fieldset{
+            width: 350px;
+     }
+    }
+     @media (max-width:426px){
+        fieldset{
+            width: 300px;
+     }
+    }
+  </style>
+<body>
+    <center>
+        <form>
+        <fieldset>
+        <br>
+            <label for="username">Username:</label>
+            <br>
+            <input id="username" maxlength="8" type="text" placeholder="enter your username">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <br>
+            <input id="password" maxlength="8" type="password" placeholder="enter your password" required>
+            <br><br>
+        
+            <label for="email">Email:</label>
+            <br>
+            <input id="email" type="email" placeholder="enter your email">
+            <br><br>
+
+            <label for="cnic">ID NO:</label>
+            <br>
+            <input id="cnic" type="text" placeholder="enter your cnic">
+            <br><br>
+
+            <label for="address">Address:</label>
+            <br>
+            <input id="address" type="text" placeholder="enter your address">
+            <br><br>
+
+            <label>Gender:</label>
+            <br>
+            <label for="male">Male</label>
+            <input name="gender" id="male" type="radio">
+            <label for="female" >Female</label>
+            <input name="gender" id="female" type="radio">
+            <br><br>
+
+            <input type="file">
+            <br><br>
+            <select multiple>
+            <option value="" selected >Karachi</option>
+            <option value="">Lahore</option>
+            <option value="">Multan</option>
+            </select>
+            <br><br>
+
+            <input id="checked" type="checkbox">
+            <label for="checked">Are you convinced</label>
+            <br><br>
+               
+            <input id="inp" type="submit" value="Submit">
+              
+        </fieldset> 
+        </form> <br>
+            
+            <a href="../index.html">Go back</a>
+
+    </center>
+</body>
+</html>

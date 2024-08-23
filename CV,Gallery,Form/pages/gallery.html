@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<style>
+*{
+    background-color: rgb(50, 47, 47);
+    font-family: sans-serif;
+    margin-top: 2%;
+  }
+  a{
+    color: aliceblue;
+    font-size: 30px;
+  }
+.frames{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.images{
+  margin-top: 50px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+.videos{
+  margin-top: 50px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width:426px) {
+  .frames{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+</style>
+<body>
+  <center>
+      <a href="../index.html">Go Back</a>
+
+      <div class="frames">
+        
+      <iframe width="330" height="215" src="https://www.youtube.com/embed/MIpmnJG0yyc?si=HxlwrpuLQY9-aqM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+
+      <iframe width="330" height="215" src="https://www.youtube.com/embed/xDiwDfJDCes?si=cyn9AEp3ojTXy0VD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <iframe width="330" height="215" src="https://www.youtube.com/embed/u6yi5XZSzrs?si=iQpR19TA4lU1-Rvn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+      
+    <div class="images">
+        <img width="350" height="250" src="../assets/image1.jpg" alt="img not reload">
+        <img width="350" height="250" src="../assets/image2.png" alt="img not reload">
+    </div>
+     
+    <div class="videos">
+      <video width="350" height="250" controls muted loop preload="metadata" poster="../assets/posterimg1.jpeg"
+      src="../assets/video1.mp4"></video>
+      
+      <video width="350" height="250" controls muted loop preload="metadata" poster="../assets/posterimg2.webp"
+      src="../assets/video2.mp4"></video>
+    </div>
+    
+    <div class="audio" style="margin-top: 20px;">
+      <audio controls muted loop preload="auto"
+       src="../assets/audio.mp3">
+      </audio>
+    </div>
+  </center>
+</body>
+</html>
